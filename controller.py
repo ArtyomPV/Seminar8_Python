@@ -12,6 +12,7 @@ import ask
 import function
 
 def main():
+    
     while True:
         request = ask.choice()
         if request == 1:
@@ -19,6 +20,7 @@ def main():
             function.write_data(user)
         elif request == 2:
             users = function.read_data()
+            print(users)
             name = ask.ask_person()
             function.find_person(users, name )
         else:
