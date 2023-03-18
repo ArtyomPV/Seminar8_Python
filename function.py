@@ -5,8 +5,6 @@ def write_data(user):
     with open("data.txt", "a", encoding="utf8" ) as file:
         file.write(user + "\n")
 
-
-
 def read_data():
     """Считывет всю информацию в базе данных"""
     with open("data.txt", "r", encoding="utf8") as file:
@@ -18,6 +16,14 @@ def find_person(persons, name):
     for person in persons:
         if name.lower() in person.lower():
             print(person)
+
+def delete_person(name):
+    """Удаляет данные"""
+    persons = read_data()
+    with open("data.txt", "a", encoding="utf8" ) as file:
+        for person in persons:
+            if name.lower()  not in person.lower():
+                file.write(person + "\n")
 
 
 
