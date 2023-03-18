@@ -20,7 +20,7 @@ def main():
             function.write_data(user)
         elif request == 2:
             users = function.read_data()
-            print(users)
+            # print(users)
             name = ask.ask_person()
             function.find_person(users, name )
         else:
