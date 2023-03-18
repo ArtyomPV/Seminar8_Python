@@ -20,5 +20,5 @@ def ask_person():
     
     
 def change_menu():
-    choice = int(input("Введите категорию\n1 - изменить данные\n2 - удалить данные\n3 - выход из опроса\n"))
+    choice = int(input("Введите категорию\n1 - изменить данные\n2 - удалить данные\n3 - выход\n"))
     return choice
